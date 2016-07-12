@@ -17,8 +17,10 @@ export default class BazaarItem extends Component {
 						 >
 					{this.renderThumbnails()}						
 				</div>
-				<h1>{this.props.name}</h1>
-				<p>{this.props.description}</p>
+				<div className="item-description has-text-centered">
+					<h1 className="title">{this.props.name}</h1>
+					<p>{this.props.description}</p>
+				</div>
 			</div>
 			)
 	}

@@ -13,7 +13,7 @@ class App extends Component {
   
   render() {
     return (
-      <div className="container">
+      <div className="page-container">
         <NavBar />
         <UserBazaar bazaarItems={this.props.bazaarItems} />
       </div>

@@ -13,11 +13,7 @@ export default class ItemList extends Component {
 
 	render() {
 		return (
-			<div>
-				<div className="item-list">
-					{this.renderList()}
-				</div>
-			</div>
+					<div className="hero-body">{this.renderList()}</div>
 		)
 	}
 }

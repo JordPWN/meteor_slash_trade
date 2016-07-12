@@ -2,7 +2,6 @@ import React, { Component, PropTypes } from 'react';
 
 import ItemList from './ItemList.jsx';
 import Viewport from './Viewport.jsx';
-import ContactMenu from './ContactMenu.jsx';
 
 export default class UserBazaar extends Component {
   
@@ -19,14 +18,14 @@ export default class UserBazaar extends Component {
 		var activeItem = this.state.activeItem;
 
 		return (
-			<div className="container">
-				<div className="user-bazaar">
-					<h1>User's Bazaar</h1>
-					<ItemList bazaarItems={this.props.bazaarItems} setActiveItem={this.setActiveItem.bind(this)} activeItem={activeItem} />
-					<Viewport activeItem={this.props.bazaarItems[activeItem]} />
-					<ContactMenu />
+			<div className="page-container columns">
+				<div className="left-menu is-pulled-left column hero is-4">
+					<h1 className="title hero-head">User's Bazaar</h1>
+					<ItemList className="hero-body" bazaarItems={this.props.bazaarItems} setActiveItem={this.setActiveItem.bind(this)} activeItem={activeItem} />
 				</div>
-
+				<div className="right-menu is-pulled-right column is-8">
+					{this.props.bazaarItems.length && <Viewport activeItem={this.props.bazaarItems[activeItem]} />}
+				</div>
 			</div>
 		)
 	}

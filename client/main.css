@@ -1,20 +1,9 @@
 /* CSS declarations go here */
-.container {
-	border: 4px solid tomato;
-}
-.navbar li{
-	list-style-type: none;
-	text-align: center;
-	border: 4px solid #9c27b0;
-	display: inline-block;
-	margin: 0 10px 0 10px;
-}
-.navbar {
-	border: 4px solid steelblue;
-	text-align: center;
+#render-target {
+	height: 100vh;
+	width: 100vw;
 }
 .thumbnail-image {
-	border: 4px solid teal;
 	max-height: 10vh;
 	max-width: auto;
 	opacity: 0.4;
@@ -23,17 +12,12 @@
 	opacity: 1;
 }
 .thumbnail-container {
-	border: 4px solid gold;
 	display: inline-block;
+	float: right;
 }
 .viewport {
-	border: 4px solid silver;
-}
-.item-list {
-	border: 4px solid red;
-}
-.list-item {
-	border: 4px solid green;
+	height: 100%;
+	position: relative;
 }
 .active-item {
 	background-color: grey;
@@ -42,4 +26,38 @@
 	height: 100px;
 	width: 100px;
 	background-color: skyblue;
+}
+.page-container {
+	width: 100vw;
+	display: inline-block;
+	margin: 0;
+	max-width: 100%;
+	margin: 0;
+	height: 100vh;
+}
+.left-menu {
+	height: calc(100vh - 50px);
+}
+.right-menu {
+	height: calc(100vh - 50px);
+}
+.item-description {
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+.contact-menu {
+/*	text-align: right;
+	clear: right;*/
+	max-width: 75px;
+}
+
+.contact-menu li:hover {
+	background-color: grey;
+	color: darkgrey;
+}
+
+ul, li {
+	list-style-type: none;
 }

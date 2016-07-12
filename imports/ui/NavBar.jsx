@@ -3,15 +3,21 @@ import React, { Component, PropTypes } from 'react';
 export default class NavBar extends Component {
 	render() {
 		return (
-				<div className="navbar">
-					<ul>
-						<li>Item 1</li>
-						<li>Item 2</li>
-						<li>Item 3</li>
-						<li>Item 4</li>
-						<li>Item 5</li>
-					</ul>
-				</div>
+				<nav className="nav">
+					<div className="container">
+						<div className="nav-left">
+						<a className="nav-item">LOGO</a>
+						</div>
+						<div className="nav-center">
+							<a className="nav-item is-tab">Page 1</a>
+							<a className="nav-item is-tab">Page 2</a>
+							<a className="nav-item is-tab">Page 3</a>
+						</div>
+						<div className="nav-right">
+							<a className="nav-item is-tab">User</a>
+						</div>
+					</div>
+				</nav>
 			)
 	}
 }

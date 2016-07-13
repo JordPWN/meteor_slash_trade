@@ -6,6 +6,7 @@ import { Users } from '../api/users.js';
 import { Items } from '../api/items.js';
 
 import UserBazaar from './UserBazaar.jsx';
+import PrivateChat from './PrivateChat.jsx';
 import NavBar from './NavBar.jsx';
 
 // App component - represents the whole app
@@ -15,7 +16,7 @@ class App extends Component {
     return (
       <div className="page-container">
         <NavBar />
-        <UserBazaar bazaarItems={this.props.bazaarItems} />
+        <PrivateChat />
       </div>
     )
 

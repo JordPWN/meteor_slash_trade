@@ -133,3 +133,20 @@ ul, li {
 	width: 2em;
 	left: calc(100%/3 - 2em)
 }
+.chat-bar {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 2em;
+}
+.chat-container {
+	height: 100%;
+	width: 100%;
+}
+.chat-box {
+	padding: 2em;
+	background-color: white;
+	height: calc(100% - 2em);
+	width: 100%;
+	overflow: scroll;
+}

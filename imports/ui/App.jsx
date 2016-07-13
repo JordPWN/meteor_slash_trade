@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import { createContainer } from 'meteor/react-meteor-data';
+import { Router, Route, Link } from 'react-router';
 
 import { Users } from '../api/users.js';
 import { Items } from '../api/items.js';
@@ -11,12 +12,17 @@ import NavBar from './NavBar.jsx';
 
 // App component - represents the whole app
 class App extends Component {
+
+  constructor() {
+    super(props);
+    this.state = {activePage: 0};
+  }
   
   render() {
     return (
       <div className="page-container">
         <NavBar />
-        <PrivateChat />
+        <UserBazaar bazaarItems={this.props.bazaarItems} />
       </div>
     )
 

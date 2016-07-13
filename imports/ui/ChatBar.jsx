@@ -21,8 +21,21 @@ export default class ChatBar extends Component {
 	    // Clear form
 	    ReactDOM.findDOMNode(this.refs.textInput).value = '';
 	    console.log(text);
-	    this.scrollIntoView(false);
 	  }
+	}
+
+	componentDidMount(){
+		this.scrollToBottom().bind(this);
+	}
+
+	componentDidUpdate(){
+		this.scrollToBottom().bind(this);
+	}
+
+	scrollToBottom(){
+		var objDiv = document.getElementById("chat-box");
+		console.log(objDiv);
+		objDiv.scrollTop = objDiv.scrollHeight;
 	}
 
 	render() {

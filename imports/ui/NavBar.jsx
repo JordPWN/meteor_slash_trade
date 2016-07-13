@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { Router, Route, Link } from 'react-router';
 
 export default class NavBar extends Component {
 	constructor(props) {

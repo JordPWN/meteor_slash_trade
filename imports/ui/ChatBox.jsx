@@ -15,7 +15,7 @@ export default class ChatBox extends Component {
 	render() {
 		return (
 			<div className="chat-container">
-				<div className="chat-box">
+				<div id="chat-box">
 					{this.renderChat()}
 				</div>
 				<ChatBar />

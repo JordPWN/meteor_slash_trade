@@ -1,10 +1,13 @@
 import React, { Component, PropTypes } from 'react';
+import { createContainer } from 'meteor/react-meteor-data';
+
+import { Items } from '../api/items.js';
 
 import ItemList from './ItemList.jsx';
 import Viewport from './Viewport.jsx';
 import NavBar from './NavBar.jsx';
 
-export default class UserBazaar extends Component {
+class UserBazaar extends Component {
   
   constructor(props) {
     super(props);
@@ -46,3 +49,13 @@ export default class UserBazaar extends Component {
 	}
 
 }
+
+UserBazaar.propTypes = {
+  bazaarItems: PropTypes.array.isRequired,
+};
+
+export default createContainer(() => {
+  return {
+    bazaarItems: Items.find({}, { sort: { createdAt: -1 } }).fetch(),
+  };
+}, UserBazaar);

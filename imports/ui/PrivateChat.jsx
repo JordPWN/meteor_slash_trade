@@ -16,7 +16,7 @@ class PrivateChat extends Component {
 	render() {
 		return (
 				<div className="page-container">
-					<navBar />
+					<NavBar />
 					<ChatBox messages={this.props.messages} />
 				</div>
 			)

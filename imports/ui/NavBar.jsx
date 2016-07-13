@@ -36,6 +36,9 @@ export default class NavBar extends Component {
 						<hr />
 						<a className="nav-item is-tab">My Bazaars</a>
 						<a className="nav-item is-tab">Add Item</a>
+						<hr />
+						<a className="nav-item is-tab">My Cart</a>
+						<a className="nav-item is-tab">History</a>
 					</div>
 				</nav>
 			)

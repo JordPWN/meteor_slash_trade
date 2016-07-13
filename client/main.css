@@ -8,6 +8,7 @@
 	max-height: 10vh;
 	max-width: auto;
 	height: 10em;
+	/*top: 25%; Move to media query for portrait view*/
 	width: auto;
 /*	min-height: 100%;
 	min-width: 100%;*/

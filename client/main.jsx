@@ -11,8 +11,8 @@ Meteor.startup(() => {
   render((
   	<Router history={hashHistory}>
     <Route path="/" component={App}/>
-    <Route path="/privatechat" component={App}/>
-    <Route path="/UserBazaar" component={App}/>
+    <Route path="/privatechat" component={PrivateChat}/>
+    <Route path="/userbazaar" component={UserBazaar}/>
   	</Router>
   	), document.getElementById('render-target'));
 });

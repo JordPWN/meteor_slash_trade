@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 
 import ItemList from './ItemList.jsx';
 import Viewport from './Viewport.jsx';
+import NavBar from './NavBar.jsx';
 
 export default class UserBazaar extends Component {
   
@@ -26,16 +27,19 @@ export default class UserBazaar extends Component {
 		var activeItem = this.state.activeItem;
 		var leftMenuStatus = this.state.leftMenu + " is is-pulled-left column is-4";
 		return (
-			<div className="page-container columns">
-				<div className={leftMenuStatus}>
-					<div className="toggle-left" onClick={this.toggleLeft.bind(this)}> ◕ </div> 
-					<div className="left-menu-container">
-						<h1 className="title">User's Bazaar</h1>
-						<ItemList className="item-list" bazaarItems={this.props.bazaarItems} setActiveItem={this.setActiveItem.bind(this)} activeItem={activeItem} />
+			<div className="page-container">
+				<NavBar />
+				<div className="page-container columns">
+					<div className={leftMenuStatus}>
+						<div className="toggle-left" onClick={this.toggleLeft.bind(this)}> ◕ </div> 
+						<div className="left-menu-container">
+							<h1 className="title">User's Bazaar</h1>
+							<ItemList className="item-list" bazaarItems={this.props.bazaarItems} setActiveItem={this.setActiveItem.bind(this)} activeItem={activeItem} />
+						</div>
 					</div>
-				</div>
-				<div className="right-menu is-pulled-right column">
-					{this.props.bazaarItems.length && <Viewport activeItem={this.props.bazaarItems[activeItem]} />}
+					<div className="right-menu is-pulled-right column">
+						{this.props.bazaarItems.length && <Viewport activeItem={this.props.bazaarItems[activeItem]} />}
+					</div>
 				</div>
 			</div>
 		)

@@ -12,17 +12,11 @@ import NavBar from './NavBar.jsx';
 
 // App component - represents the whole app
 class App extends Component {
-
-  constructor() {
-    super(props);
-    this.state = {activePage: 0};
-  }
   
   render() {
     return (
       <div className="page-container">
         <NavBar />
-        <UserBazaar bazaarItems={this.props.bazaarItems} />
       </div>
     )
 

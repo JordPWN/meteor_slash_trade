@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { Router, Route, Link } from 'react-router';
+import { Link } from 'react-router';
 
 export default class NavBar extends Component {
 	constructor(props) {
@@ -23,9 +23,9 @@ export default class NavBar extends Component {
 						<a className="nav-item">LOGO</a>
 						</div>
 						<div className="nav-center">
-							<a className="nav-item is-tab is-active">Page 1</a>
-							<a className="nav-item is-tab">Page 2</a>
-							<a className="nav-item is-tab">Page 3</a>
+							<Link to="/privatechat" className="nav-item is-tab" activeClassName="is-active">Private Chat</Link>
+							<Link to="/userbazaar" className="nav-item is-tab" activeClassName="is-active">User Bazaar</Link>
+							<Link to="/" className="nav-item is-tab" activeClassName="is-active">Page 3</Link>
 						</div>
 						<div className="nav-right">
 							<a className="nav-item is-tab" onClick={this.toggleUserMenu.bind(this)}>User</a>

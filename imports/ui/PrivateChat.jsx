@@ -5,6 +5,7 @@ import { createContainer } from 'meteor/react-meteor-data';
 import { Messages } from '../api/messages.js';
 
 import ChatBox from './ChatBox.jsx';
+import NavBar from './NavBar.jsx';
 
 class PrivateChat extends Component {
 	
@@ -14,7 +15,10 @@ class PrivateChat extends Component {
 
 	render() {
 		return (
-				<ChatBox messages={this.props.messages} />
+				<div className="page-container">
+					<navBar />
+					<ChatBox messages={this.props.messages} />
+				</div>
 			)
 	}
 }

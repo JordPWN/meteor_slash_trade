@@ -22,9 +22,10 @@ export default class BazaarItem extends Component {
 	}
 
 	render() {
-		var bgImage = {'background-image: url("' + this.props.images[this.state.activeThumbnail] + '")'}
+		var bgImage = this.props.images[this.state.activeThumbnail]
 		return (
-			<div className="item-container" style={bgImage}>
+			<div className="item-container">
+			<img className="item-image"src={bgImage} />
 				<ContactMenu />
 				<div className="thumbnail-container">
 					{this.renderThumbnails()}						

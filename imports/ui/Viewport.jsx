@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
 import BazaarItem from './BazaarItem.jsx';
-import ContactMenu from './ContactMenu.jsx';
 
 export default class Viewport extends Component {
 
@@ -9,8 +8,8 @@ export default class Viewport extends Component {
 		return (
 			<div className="viewport">
 	      <BazaarItem key={this.props.activeItem._id} description={this.props.activeItem.description} 
-	      						images={this.props.activeItem.images} name={this.props.activeItem.name} />
-	      <ContactMenu />
+	      						images={this.props.activeItem.images} name={this.props.activeItem.name} 
+	      />
 			</div>
 		)
 	}

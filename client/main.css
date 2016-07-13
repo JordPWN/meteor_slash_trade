@@ -6,6 +6,11 @@
 .thumbnail-image {
 	max-height: 10vh;
 	max-width: auto;
+	height: 10em;
+	width: 10em;
+/*	min-height: 100%;
+	min-width: 100%;*/
+	background-color: grey;
 	opacity: 0.4;
 }
 .thumbnail-image.isActive {
@@ -15,12 +20,22 @@
 	display: inline-block;
 	float: right;
 }
+.thumbnail-img-container {
+	height: 10em;
+	width: 100%;
+}
+.thumbnail-
+.item-container {
+	height: 100%;
+	width: 100%;
+}
 .viewport {
 	height: 100%;
 	position: relative;
 }
 .active-item {
 	background-color: grey;
+	color: lightgrey;
 }
 .box {
 	height: 100px;
@@ -33,12 +48,17 @@
 	margin: 0;
 	max-width: 100%;
 	margin: 0;
-	height: 100vh;
+	height: calc(100vh - 50px);
+}
+.nav  {
+	/*border-bottom: 4px solid darkgrey;*/
 }
 .left-menu {
+	padding: 2em;
 	height: calc(100vh - 50px);
 }
 .right-menu {
+	padding: 1em;
 	height: calc(100vh - 50px);
 }
 .item-description {
@@ -48,16 +68,32 @@
   padding: 10px;
 }
 .contact-menu {
-/*	text-align: right;
-	clear: right;*/
+	float: left;
 	max-width: 75px;
 }
-
 .contact-menu li:hover {
 	background-color: grey;
-	color: darkgrey;
+	color: lightgrey;
 }
-
 ul, li {
 	list-style-type: none;
+}
+.active-thumbnail {
+	opacity: 1;
+}
+.user-menu {
+	transition: all 1s;
+	position: fixed;
+	height: calc(100vh - 50px);
+	width: 20vw;
+	z-index: 10;
+	box-shadow: 10px 20px 10px 10px grey;
+	background-color: white;
+	right: calc(0-20vw);
+	bottom: 0;
+}
+
+.user-menu.active {
+	transition: all 1s;
+	right: 0;
 }

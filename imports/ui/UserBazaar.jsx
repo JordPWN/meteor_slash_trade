@@ -16,7 +16,6 @@ export default class UserBazaar extends Component {
 
 	render() {
 		var activeItem = this.state.activeItem;
-
 		return (
 			<div className="page-container columns">
 				<div className="left-menu is-pulled-left column hero is-4">

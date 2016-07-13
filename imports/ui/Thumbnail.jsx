@@ -4,7 +4,9 @@ export default class Thumbnail extends Component {
 
 	render() {
 		return (
-			<img className="thumbnail-image" src={this.props.image} />
+			<div onClick={this.props.clickMe} className="thumbnail-img-containter">
+				<img className={this.props.className} src={this.props.image} />
+			</div>
 		)
 	}
 }

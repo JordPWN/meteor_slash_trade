@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { createContainer } from 'meteor/react-meteor-data';
 import { Router, Route, Link } from 'react-router';
 
-import { Users } from '../api/users.js';
 import { Items } from '../api/items.js';
 
 import UserBazaar from './UserBazaar.jsx';

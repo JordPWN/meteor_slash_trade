@@ -2,6 +2,8 @@
 #render-target {
 	height: 100vh;
 	width: 100vw;
+	position: fixed;
+	overflow: hidden;
 }
 .thumbnail-image {
 	display: block;
@@ -58,7 +60,7 @@
 	margin: 0;
 	max-width: 100%;
 	margin: 0;
-	height: calc(100vh - 50px);
+	height: 100vh;
 }
 .nav  {
 	/*border-bottom: 4px solid darkgrey;*/
@@ -66,7 +68,7 @@
 .left-menu {
 	width: calc(100% - 2vw);
 	padding: 2em;
-	height: calc(100vh - 50px);
+	height: calc(100vh - 32px);
 	transition: all .4s;
 	background-color: white;
 	overflow: hidden;
@@ -78,10 +80,13 @@
 }
 .right-menu {
 	padding: 1em;
-	height: calc(100vh - 50px);
+	height: 92vh;
 }
 .column {
 	padding: 0;
+}
+.nav{
+	height: 8vh;
 }
 .item-description {
 	position: absolute;
@@ -108,7 +113,7 @@ ul, li {
 .user-menu {
 	transition: all .4s;
 	position: fixed;
-	height: calc(100vh - 50px);
+	height: 92vh;
 	width: 20vw;
 	z-index: 10;
 	box-shadow: 10px 20px 10px 10px grey;
@@ -140,13 +145,18 @@ ul, li {
 	height: 2em;
 }
 .chat-container {
-	height: 100%;
+	height: 92vh;
 	width: 100%;
 }
 #chat-box {
 	padding: 2em;
+	margin-bottom: ;
 	background-color: white;
-	height: calc(100% - 2em);
+	height: calc(92vh - 2em);
 	width: 100%;
 	overflow: scroll;
+	transition: all 2s;
+}
+.login-form {
+	padding: 2em;
 }

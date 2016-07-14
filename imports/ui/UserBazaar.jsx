@@ -32,7 +32,7 @@ class UserBazaar extends Component {
 		return (
 			<div className="page-container">
 				<NavBar />
-				<div className="page-container columns">
+				<div className="columns">
 					<div className={leftMenuStatus}>
 						<div className="toggle-left" onClick={this.toggleLeft.bind(this)}> ◕ </div> 
 						<div className="left-menu-container">

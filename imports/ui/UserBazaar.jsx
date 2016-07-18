@@ -17,7 +17,9 @@ class UserBazaar extends Component {
 	setActiveItem(index) {
 		this.setState({activeItem: index});
 	}
-
+	toggleArrow(arrow) {
+		return ("left-menu" === this.state.leftMenu) ? "◀" : "▶";
+	}
 	toggleLeft() {
 		if (this.state.leftMenu === "left-menu"){
 			this.setState({leftMenu: "left-menu inactive"});
@@ -34,7 +36,7 @@ class UserBazaar extends Component {
 				<NavBar />
 				<div className="columns">
 					<div className={leftMenuStatus}>
-						<div className="toggle-left" onClick={this.toggleLeft.bind(this)}> ◕ </div> 
+						<div className="toggle-left has-text-centered" onClick={this.toggleLeft.bind(this)}> {this.toggleArrow()} </div> 
 						<div className="left-menu-container">
 							<h1 className="title">User's Bazaar</h1>
 							<ItemList className="item-list" bazaarItems={this.props.bazaarItems} setActiveItem={this.setActiveItem.bind(this)} activeItem={activeItem} />

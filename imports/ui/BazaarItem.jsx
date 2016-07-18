@@ -17,7 +17,7 @@ export default class BazaarItem extends Component {
 	renderThumbnails() {
 		return this.props.images.map((image, i) => (
       <Thumbnail className={this.state.activeThumbnail === i ? "thumbnail-image active-thumbnail" : "thumbnail-image"}
-       key={image._id} image={image} clickMe={this.setActiveThumbnail.bind(this, i)}/>
+       key={i} image={image} clickMe={this.setActiveThumbnail.bind(this, i)}/>
     ));
 	}
 

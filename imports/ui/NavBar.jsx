@@ -17,26 +17,25 @@ export default class NavBar extends Component {
 		}
 	}
 	isLoggedIn() {
-		if (Meteor.user()) {
-			return (
-				<div className={this.state.isUserMenuActive}>
-					<a className="nav-item is-tab">Profile</a>
-					<a className="nav-item is-tab">Settings</a>
-					<hr />
-					<a className="nav-item is-tab">My Bazaars</a>
-					<a className="nav-item is-tab">Add Item</a>
-					<hr />
-					<a className="nav-item is-tab">My Cart</a>
-					<a className="nav-item is-tab">History</a>
-				</div>
-			);
-		}else{
-			return (
-				<div className={this.state.isUserMenuActive}>
-					<LoginForm />
-				</div>
-			);
-		}
+		return (
+			<div>
+				{(Meteor.user() &&
+					<div className={this.state.isUserMenuActive}>
+						<a className="nav-item is-tab">Profile</a>
+						<a className="nav-item is-tab">Settings</a>
+						<hr />
+						<a className="nav-item is-tab">My Bazaars</a>
+						<a className="nav-item is-tab">Add Item</a>
+						<hr />
+						<a className="nav-item is-tab">My Cart</a>
+						<a className="nav-item is-tab">History</a>
+					</div>) ||
+					<div className={this.state.isUserMenuActive}>
+						<LoginForm />
+					</div>
+				}
+			</div>
+		);
 	}
 
 	render() {

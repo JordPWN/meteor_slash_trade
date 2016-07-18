@@ -62,13 +62,10 @@
 	margin: 0;
 	height: 100vh;
 }
-.nav  {
-	/*border-bottom: 4px solid darkgrey;*/
-}
 .left-menu {
 	width: calc(100% - 2vw);
 	padding: 2em;
-	height: calc(100vh - 32px);
+	height: 94vh;
 	transition: all .4s;
 	background-color: white;
 	overflow: hidden;
@@ -76,17 +73,18 @@
 }
 .inactive {
 	transition: all .4s;
-	width: 2em !important;
+	width: 2.5em !important;
 }
 .right-menu {
 	padding: 1em;
-	height: 92vh;
+	height: 94vh;
 }
 .column {
 	padding: 0;
 }
 .nav{
 	height: 8vh;
+	min-height: 0;
 }
 .item-description {
 	position: absolute;
@@ -97,7 +95,9 @@
 }
 .contact-menu {
 	float: left;
-	max-width: 75px;
+}
+.contact-menu ul li {
+	padding: 0 .4em 0 .4em;
 }
 .contact-menu li:hover {
 	background-color: grey;
@@ -120,14 +120,15 @@ ul, li {
 	background-color: white;
 	right: 0;
 	bottom: 0;
-	margin-right: calc(-20vw);
+	margin-right: -20vw;
 }
 .user-menu.active {
 	transition: all .4s;
 	margin-right: 0;
 }
 .left-menu-container {
-	float: left;
+	min-width: 12em;
+	width: calc(100% - 1em);
 	padding: 2em 2em 0 2em;
 }
 .toggle-left {
@@ -141,7 +142,8 @@ ul, li {
 .chat-bar {
 	position: absolute;
 	width: 100%;
-	bottom: 0;
+	padding: 0 .5em 0 .5em;
+	bottom: .5em;
 	height: 2em;
 }
 .chat-container {
@@ -157,6 +159,13 @@ ul, li {
 	overflow: scroll;
 	transition: all 2s;
 }
-.login-form {
+.login-form-container {
 	padding: 2em;
+}
+.flash-box {
+  position: fixed;
+  background-color: tomato;
+  width: 100vw;
+  text-align: center;
+  z-index: 11;
 }

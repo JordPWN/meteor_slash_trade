@@ -189,7 +189,7 @@ input[type=button] {
 
 html {
   background-color: #f5f7fa;
-  font-size: 14px;
+  font-size: 1.166666em;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
@@ -246,7 +246,7 @@ a:hover {
 code {
   background-color: #f5f7fa;
   color: #ed6c63;
-  font-size: 12px;
+  font-size: 1em;
   font-weight: normal;
   padding: 1px 2px 2px;
 }
@@ -266,7 +266,7 @@ input[type="radio"] {
 }
 
 small {
-  font-size: 11px;
+  font-size: 0.9166666em;
 }
 
 span {
@@ -335,7 +335,7 @@ table th {
 }
 
 .fa {
-  font-size: 21px;
+  font-size: 1.75em;
   text-align: center;
   vertical-align: top;
 }
@@ -741,7 +741,7 @@ a.box:active {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 14px;
+  font-size: 1.166666em;
   height: 32px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -800,7 +800,7 @@ a.box:active {
 
 .button small {
   display: block;
-  font-size: 11px;
+  font-size: 0.9166666em;
   line-height: 1;
   margin-top: 5px;
 }
@@ -1208,7 +1208,7 @@ a.box:active {
 
 .button.is-small {
   border-radius: 2px;
-  font-size: 11px;
+  font-size: 0.9166666em;
   height: 24px;
   line-height: 16px;
   padding-left: 6px;
@@ -1216,14 +1216,14 @@ a.box:active {
 }
 
 .button.is-medium {
-  font-size: 18px;
+  font-size: 1.5em;
   height: 40px;
   padding-left: 14px;
   padding-right: 14px;
 }
 
 .button.is-large {
-  font-size: 22px;
+  font-size: 1.833333em;
   height: 48px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1350,19 +1350,19 @@ a.box:active {
 }
 
 .content.is-medium {
-  font-size: 18px;
+  font-size: 1.5em;
 }
 
 .content.is-medium code {
-  font-size: 14px;
+  font-size: 1.166666em;
 }
 
 .content.is-large {
-  font-size: 24px;
+  font-size: 2em;
 }
 
 .content.is-large code {
-  font-size: 18px;
+  font-size: 1.5em;
 }
 
 .input, .textarea {
@@ -1380,7 +1380,7 @@ a.box:active {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 14px;
+  font-size: 1.166666em;
   height: 32px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -1470,7 +1470,7 @@ a.box:active {
 
 .input.is-small, .is-small.textarea {
   border-radius: 2px;
-  font-size: 11px;
+  font-size: 0.9166666em;
   height: 24px;
   line-height: 16px;
   padding-left: 6px;
@@ -1478,7 +1478,7 @@ a.box:active {
 }
 
 .input.is-medium, .is-medium.textarea {
-  font-size: 18px;
+  font-size: 1.5em;
   height: 40px;
   line-height: 32px;
   padding-left: 10px;
@@ -1486,7 +1486,7 @@ a.box:active {
 }
 
 .input.is-large, .is-large.textarea {
-  font-size: 24px;
+  font-size: 2em;
   height: 48px;
   line-height: 40px;
   padding-left: 12px;
@@ -1565,7 +1565,7 @@ a.box:active {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 14px;
+  font-size: 1.166666em;
   height: 32px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -1693,7 +1693,7 @@ a.box:active {
 
 .select.is-small select {
   border-radius: 2px;
-  font-size: 11px;
+  font-size: 0.9166666em;
   height: 24px;
   line-height: 16px;
   padding-left: 6px;
@@ -1706,7 +1706,7 @@ a.box:active {
 }
 
 .select.is-medium select {
-  font-size: 18px;
+  font-size: 1.5em;
   height: 40px;
   line-height: 32px;
   padding-left: 10px;
@@ -1719,7 +1719,7 @@ a.box:active {
 }
 
 .select.is-large select {
-  font-size: 24px;
+  font-size: 2em;
   height: 48px;
   line-height: 40px;
   padding-left: 12px;
@@ -1739,7 +1739,7 @@ a.box:active {
 
 .help {
   display: block;
-  font-size: 11px;
+  font-size: 0.9166666em;
   margin-top: 5px;
 }
 
@@ -1907,7 +1907,7 @@ a.box:active {
 
 .control.has-icon > .fa {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1.166666em;
   height: 24px;
   line-height: 24px;
   text-align: center;
@@ -1930,12 +1930,12 @@ a.box:active {
 }
 
 .control.has-icon .input.is-medium + .fa, .control.has-icon .is-medium.textarea + .fa {
-  font-size: 21px;
+  font-size: 1.75em;
   top: 8px;
 }
 
 .control.has-icon .input.is-large + .fa, .control.has-icon .is-large.textarea + .fa {
-  font-size: 21px;
+  font-size: 1.75em;
   top: 12px;
 }
 
@@ -2344,7 +2344,7 @@ a.box:active {
 .table td.is-icon .fa,
 .table th.is-icon .fa {
   display: inline-block;
-  font-size: 21px;
+  font-size: 1.75em;
   height: 24px;
   line-height: 24px;
   text-align: center;
@@ -2494,13 +2494,13 @@ a.box:active {
 
 .title {
   color: #222324;
-  font-size: 28px;
+  font-size: 2.333333em;
   line-height: 1;
 }
 
 .title code {
   display: inline-block;
-  font-size: 28px;
+  font-size: 2.333333em;
 }
 
 .title strong {
@@ -2516,51 +2516,51 @@ a.box:active {
 }
 
 .title.is-1 {
-  font-size: 48px;
+  font-size: 4em;
 }
 
 .title.is-1 code {
-  font-size: 40px;
+  font-size: 3.33333em;
 }
 
 .title.is-2 {
-  font-size: 40px;
+  font-size: 3.33333em;
 }
 
 .title.is-2 code {
-  font-size: 28px;
+  font-size: 2.333333em;
 }
 
 .title.is-3 {
-  font-size: 28px;
+  font-size: 2.333333em;
 }
 
 .title.is-3 code {
-  font-size: 24px;
+  font-size: 2em;
 }
 
 .title.is-4 {
-  font-size: 24px;
+  font-size: 2em;
 }
 
 .title.is-4 code {
-  font-size: 18px;
+  font-size: 1.5em;
 }
 
 .title.is-5 {
-  font-size: 18px;
+  font-size: 1.5em;
 }
 
 .title.is-5 code {
-  font-size: 14px;
+  font-size: 1.166666em;
 }
 
 .title.is-6 {
-  font-size: 14px;
+  font-size: 1.166666em;
 }
 
 .title.is-6 code {
-  font-size: 14px;
+  font-size: 1.166666em;
 }
 
 .title.is-normal {
@@ -2579,14 +2579,14 @@ a.box:active {
 
 .subtitle {
   color: #69707a;
-  font-size: 18px;
+  font-size: 1.5em;
   line-height: 1.125;
 }
 
 .subtitle code {
   border-radius: 3px;
   display: inline-block;
-  font-size: 14px;
+  font-size: 1.166666em;
   padding: 2px 3px;
   vertical-align: top;
 }
@@ -2600,51 +2600,51 @@ a.box:active {
 }
 
 .subtitle.is-1 {
-  font-size: 48px;
+  font-size: 4em;
 }
 
 .subtitle.is-1 code {
-  font-size: 40px;
+  font-size: 3.33333em;
 }
 
 .subtitle.is-2 {
-  font-size: 40px;
+  font-size: 3.33333em;
 }
 
 .subtitle.is-2 code {
-  font-size: 28px;
+  font-size: 2.333333em;
 }
 
 .subtitle.is-3 {
-  font-size: 28px;
+  font-size: 2.333333em;
 }
 
 .subtitle.is-3 code {
-  font-size: 24px;
+  font-size: 2em;
 }
 
 .subtitle.is-4 {
-  font-size: 24px;
+  font-size: 2em;
 }
 
 .subtitle.is-4 code {
-  font-size: 18px;
+  font-size: 1.5em;
 }
 
 .subtitle.is-5 {
-  font-size: 18px;
+  font-size: 1.5em;
 }
 
 .subtitle.is-5 code {
-  font-size: 14px;
+  font-size: 1.166666em;
 }
 
 .subtitle.is-6 {
-  font-size: 14px;
+  font-size: 1.166666em;
 }
 
 .subtitle.is-6 code {
-  font-size: 14px;
+  font-size: 1.166666em;
 }
 
 .subtitle.is-normal {
@@ -2713,7 +2713,7 @@ a.box:active {
 
 .icon {
   display: inline-block;
-  font-size: 21px;
+  font-size: 1.75em;
   height: 24px;
   line-height: 24px;
   text-align: center;
@@ -2728,7 +2728,7 @@ a.box:active {
 
 .icon.is-small {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1.166666em;
   height: 16px;
   line-height: 16px;
   text-align: center;
@@ -2738,7 +2738,7 @@ a.box:active {
 
 .icon.is-medium {
   display: inline-block;
-  font-size: 28px;
+  font-size: 2.333333em;
   height: 32px;
   line-height: 32px;
   text-align: center;
@@ -2748,7 +2748,7 @@ a.box:active {
 
 .icon.is-large {
   display: inline-block;
-  font-size: 42px;
+  font-size: 3.5em;
   height: 48px;
   line-height: 48px;
   text-align: center;
@@ -2823,14 +2823,14 @@ a.box:active {
 
 .heading {
   display: block;
-  font-size: 11px;
+  font-size: 0.9166666em;
   letter-spacing: 1px;
   margin-bottom: 5px;
   text-transform: uppercase;
 }
 
 .highlight {
-  font-size: 12px;
+  font-size: 1em;
   font-weight: normal;
   max-width: 100%;
   overflow: hidden;
@@ -2860,7 +2860,7 @@ a.box:active {
   background-color: #f5f7fa;
   border-radius: 290486px;
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.5em;
   vertical-align: top;
 }
 
@@ -2876,7 +2876,7 @@ a.box:active {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 12px;
+  font-size: 1em;
   height: 24px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -2940,21 +2940,21 @@ a.box:active {
 }
 
 .tag.is-small {
-  font-size: 11px;
+  font-size: 0.9166666em;
   height: 20px;
   padding-left: 8px;
   padding-right: 8px;
 }
 
 .tag.is-medium {
-  font-size: 14px;
+  font-size: 1.166666em;
   height: 32px;
   padding-left: 14px;
   padding-right: 14px;
 }
 
 .tag.is-large {
-  font-size: 18px;
+  font-size: 1.5em;
   height: 40px;
   line-height: 24px;
   padding-left: 18px;
@@ -4646,7 +4646,7 @@ a.box:active {
   background-color: #f5f7fa;
   border-radius: 290486px;
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.5em;
   height: 32px;
   line-height: 24px;
   min-width: 32px;
@@ -4768,7 +4768,7 @@ a.box:active {
 
 .menu-label {
   color: #aeb1b5;
-  font-size: 11px;
+  font-size: 0.9166666em;
   letter-spacing: 1px;
   margin-bottom: 5px;
   text-transform: uppercase;
@@ -5017,7 +5017,7 @@ a.box:active {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-size: 24px;
+  font-size: 2em;
   line-height: 1;
 }
 
@@ -5367,7 +5367,7 @@ a.nav-item.is-tab.is-active {
 
 .panel-icon {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1.166666em;
   height: 16px;
   line-height: 16px;
   text-align: center;
@@ -5388,7 +5388,7 @@ a.nav-item.is-tab.is-active {
   border-bottom: 1px solid #d3d6db;
   border-radius: 4px 4px 0 0;
   color: #222324;
-  font-size: 18px;
+  font-size: 1.5em;
   font-weight: 300;
   padding: 10px;
 }
@@ -5406,7 +5406,7 @@ a.nav-item.is-tab.is-active {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 11px;
+  font-size: 0.9166666em;
   padding: 5px 10px 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -5636,7 +5636,7 @@ a.panel-block:hover {
 }
 
 .tabs.is-small {
-  font-size: 11px;
+  font-size: 0.9166666em;
 }
 
 .tabs.is-small a {
@@ -5649,7 +5649,7 @@ a.panel-block:hover {
 }
 
 .tabs.is-medium {
-  font-size: 18px;
+  font-size: 1.5em;
 }
 
 .tabs.is-medium a {
@@ -5662,7 +5662,7 @@ a.panel-block:hover {
 }
 
 .tabs.is-large {
-  font-size: 28px;
+  font-size: 2.333333em;
 }
 
 .tabs.is-large a {

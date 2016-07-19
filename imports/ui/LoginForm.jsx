@@ -34,12 +34,11 @@ export default class LoginForm extends Component {
 			console.log("Failure: ", failure);
 			return failure;
 		}
-
 	}
 
 	submitLogin() {
 		console.log("Submitting login...");
-		Meteor.loginWithPassword(this.refs.user, this.refs.password, renderInvalidation(error));
+		Meteor.loginWithPassword(this.refs.user, this.refs.password, renderInvalidations(error));
 
 	}
 
@@ -53,9 +52,13 @@ export default class LoginForm extends Component {
 
 	submitSignup(e) {
 		e.preventDefault();
+		console.log("this.refs:", this.refs)
 		console.log("Submitting signup...");
-		var signupInvalidations = validate(this.refs);
-		if (!signUpValidations){
+		var signupInvalidations = this.validate(this.refs);
+		if (signupInvalidations === null){
+			console.log("Signup failure!");
+			renderInvalidations(validate(this.refs));
+		}else{
 			Accounts.createUser({
 				username: this.refs.username.value,
 				email: this.refs.email.value,
@@ -66,9 +69,6 @@ export default class LoginForm extends Component {
 				}
 			});
 			console.log("Signup success!")
-		}else{
-			console.log("Signup failure!");
-			renderInvalidations(validate(this.refs));
 		}
 	}
 
@@ -87,7 +87,7 @@ export default class LoginForm extends Component {
 						  <i className="fa fa-lock"></i>
 						</p>
 						<p className="control">
-						  <span type="submit" className="button is-success is-fullwidth">
+						  <span type="submit" className="button is-success is-fullwidth" onClick={this.submitLogin.bind(this)}>
 						    Login
 						  </span>
 						</p>
@@ -95,7 +95,7 @@ export default class LoginForm extends Component {
 				}
 				
 				{this.state.activeForm==="signup" &&
-					<form className="signup-form tab-content" onSubmit={this.submitSignup}>
+					<form ref="form" className="signup-form tab-content" onSubmit={this.submitSignup.bind(this)}>
 						<p className="control">
 						  <input className="input" type="text" ref="username" name="username" placeholder="Username" />
 						</p>
@@ -116,7 +116,7 @@ export default class LoginForm extends Component {
 						  <i className="fa fa-lock"></i>
 						</p>
 						<p className="control">
-						  <span type="submit" className="button is-success is-fullwidth">
+						  <span type="submit" className="button is-success is-fullwidth" onClick={this.submitSignup.bind(this)}>
 						    Signup
 						  </span>
 						</p>

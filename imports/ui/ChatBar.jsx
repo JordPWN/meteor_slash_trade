@@ -14,7 +14,7 @@ export default class ChatBar extends Component {
 	    Messages.insert({
 	      text: text,
 	      time: new Date(), // current time
-	      user: Meteor.User.username ? Meteor.User.username : "Junk", // fake user
+	      user: Meteor.user.username ? ReactDOM.findDOMNode(this.refs.username).value.trim() : "Junk",
 	      channel: 0,
 	    });
 	 
@@ -24,7 +24,8 @@ export default class ChatBar extends Component {
 	}
 
 	componentDidMount() {
-		this.scrollToBottom.bind(this);
+		this.scrollToBottom().bind(this);
+		React.findDOMNode(this.refs.textInput).focus();
 	}
 	componentDidUpdate(){
 		this.scrollToBottom().bind(this);
@@ -38,6 +39,7 @@ export default class ChatBar extends Component {
 	render() {
 		return (
 			<form className="chat-bar control has-addons" onSubmit={this.sendMessage.bind(this)}>
+				<input className="input" type="textarea" placeholder="Who are you?" ref="username" />
 			  <input className="input is-expanded" type="textarea" placeholder="Start typing!" ref="textInput" />
 			  <button className="button is-info" type="submit" >
 			    Send
